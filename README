@@ -1,0 +1,25 @@
+==Githubプッシュ手順==
+1.Githubでアカウント作成&ログイン
+2.リポジトリの作成
+3.PC(ローカル)でGithub用のフォルダを作成
+4.コマンドプロンプトまたはターミナルで上記Github用フォルダにディレクトリの移動
+
+5.  .gitフォルダ(隠しフォルダ)を作成
+※下記コマンドを入力($は入力しない)
+$git init
+
+6.Githubにプッシュするファイルの選択
+※すべて選択する時は(.)ドット
+$git add .
+
+7.コミット(コメント)の作成
+※ダブルクォーテーション内にコメントを書き込む
+$git commit -m "Python_furigana_Programming"
+
+8.プッシュするGithubのリポジトリの登録
+※最後に.gitをつけるのを忘れない
+$git remote add origin https://github.com/まかさんのGithubのアカウント名/作成したリポジトリ名.git
+
+9.プッシュする
+※masterでプッシュする最初のファイルは-fオプションで送ると確実に送れる
+$git push -f origin master
